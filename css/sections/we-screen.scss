@@ -1,0 +1,47 @@
+.we {
+	background-image:url('../img/bg/we_screen.jpg');
+}
+
+.we__title {
+	text-align:center;
+	font-size:72px;
+	line-height:85px;
+	color:$dark-grey;
+	font-family:'Gagalin-Regular';
+	font-weight: normal;
+ 	font-style: normal;
+	margin:0 0 75px 0;
+}
+
+.we_row__col {
+	width:32%;
+	display:inline-block;
+	float:left;
+	padding:0 5px;
+	text-align:center;
+}
+
+.we_row__logo {
+	height:85px;
+	width:auto;
+}
+
+.we__text-title {
+	font-size:24px;
+	line-height:28px;
+	font-family:'Lifehack-Medium';
+	font-weight: normal;
+ 	font-style: normal;
+	color:$dark-grey;
+	margin-top:30px;
+}
+
+.we__text {
+	font-size:14px;
+	line-height:24px;
+	font-family:'Ubuntu-Light';
+	font-weight: normal;
+ 	font-style: normal;
+	color:$dark-grey;
+	margin:0;
+}

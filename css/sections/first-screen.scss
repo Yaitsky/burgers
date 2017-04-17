@@ -1,0 +1,211 @@
+.first_screen {
+	background-image:url('../img/bg/first_screen.jpg');
+}
+.header {
+	height:80px;
+
+	&__left {
+		width:25%;
+		float:left;
+	}
+	&__right {
+		width:75%;
+		float:right;
+	}
+	&__logo {
+		margin-top:5px;
+	}
+	&__img {
+		height:70px;
+		width:auto;
+	}
+}
+.menu {
+	position:relative;
+	text-align:right;
+	&__list {
+		list-style-type:none;
+		margin:25px 0 0 0;
+		padding:0;
+		display:inline-block;
+	}
+	&__item {
+		display:inline-block;
+		margin:0;
+		padding:0 10px;;
+		vertical-align:middle;
+		text-align:center;
+	}
+	&__link {
+		font-family:'Ubuntu-Medium';
+		font-size:13px;
+		line-height:30px;
+		font-weight: normal;
+ 		font-style: normal;
+		color:$white;
+		text-decoration:none;
+		display:block;
+		&:hover {
+			color:rgba(255, 255, 255, 0.7);
+		}
+	}
+	&__decor {
+		display:inline-block;
+		width:4px;
+		height:4px;
+		border-radius:50%;
+		background-color:$white;
+		vertical-align:middle;
+	}
+	&__order {
+		background-color:$dark-red;
+		border-radius:5px;
+		font-family:'Ubuntu-Medium';
+		font-size:13px;
+		line-height:30px;
+		color:$white;
+		text-decoration:none;
+		display:inline-block;
+		padding:5px 20px;
+		vertical-align:middle;
+		font-weight: normal;
+ 		font-style: normal;
+		&:hover {
+		background-color:$darkest-red;
+	}
+	}
+	
+}
+
+.content-wrapper {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+.main_wrapper {
+	top:80px;
+}
+
+.content {
+	width:100%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+.main_content__left {
+	width:451px;
+	float:left;
+	position:relative;
+}
+.main_content__right {
+	padding-top:60px;
+	width:430px;
+	float:right;
+	margin-left:40px;
+}
+
+.main_content__img {
+	width:451px;
+	height:auto;
+}
+
+.main_content__title {
+	font-size:72px;
+	line-height:85px;
+	color:$orange;
+	font-family:'Gagalin-Regular';
+	margin:0;
+	font-weight: normal;
+ 	font-style: normal;
+}
+
+.main_content__text {
+	font-size:65px;
+	line-height:85px;
+	font-family:'Lifehack-Medium';
+	margin:0;
+	color:$white;
+	font-weight: normal;
+ 	font-style: normal;
+}
+
+
+.arrow-scroll {
+	position:absolute;
+	bottom:40px;
+	left:50%;
+	transform: translate (0, -50%);
+	&_img {
+		height:14px;
+		width:auto;
+	}
+}
+
+
+.side_menu {
+	position:fixed;
+	top:90px;
+	right:40px;
+	z-index:1000;
+	&__list {
+		list-style-type:none;
+		margin:0;
+		padding:0;
+	}
+	&__item {
+		margin-bottom:6px;
+	}
+	&__link {
+		border-sizing:border-box;
+		width:16px;
+		height:16px;
+		display: block;
+		position:relative;
+
+		&::before {
+		content:'';
+		width:0px;
+		height:0px;
+		display:block;
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		border-radius:50%;
+		border:1px solid #fff;
+		transition:0.3s;
+		}
+
+		&::after {
+		content:'';
+		display:block;
+		position:absolute;
+		top:50%;
+		left:50%;
+		width:6px;
+		height:6px;
+		background-color:$white;
+		transform: translate(-50%, -50%);
+		border-radius:50%;
+		}
+		&:hover::before {
+		width:14px;
+		height:14px;	
+		}
+	}
+}
+.activeOPS .side_menu__link::before {
+	width:14px;
+	height:14px;
+}
+
+
+
+
+
+

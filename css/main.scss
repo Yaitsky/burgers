@@ -1,0 +1,30 @@
+//colors
+$black: #000;
+$white: #fff;
+$orange: #f9b43b;
+$medium-orange: #eb8c38;
+$dark-orange: #f08c33;
+$red: #e35028;
+$dark-red: #e45028;
+$darkest-red: #c1401e;
+$dark-grey: #2f3234;
+$light-black: #131313;
+
+//layout, fonts
+@import "layout/fonts.scss";
+@import "layout/adjustment.scss";
+@import "layout/normalize.scss";
+
+//sections
+@import "sections/first-screen.scss";
+@import "sections/we-screen.scss";
+@import "sections/slider-screen";
+@import "sections/team-screen";
+@import "sections/menu-screen";
+@import "sections/reviews-screen";
+@import "sections/form-screen";
+@import "sections/map-screen";
+
+//media
+
+

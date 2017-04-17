@@ -1,0 +1,95 @@
+.team {
+	background-image:url('../img/bg/team_screen.jpg');
+	&__right {
+		background-color:rgba(47, 50, 52, 0.9);
+		box-shadow:-1px 0px 3px rgba(0,0,0, 0.6);
+		width:50%;
+		float:right;
+		height:100%;
+		position:relative;
+	}
+	&__content {
+		position:absolute;
+		top:50%;
+		left:20%;
+		transform: translate(0, -50%);
+	}
+	&__title {
+		font-size:72px;
+		line-height:85px;
+		color:$orange;
+		font-family:'Gagalin-Regular';
+		margin:0 0 67px 0;
+		font-weight: normal;
+ 		font-style: normal;
+	}
+	&__list {
+		list-style-type:none;
+		margin:0;
+		padding:0;
+	}
+	&__item {
+		margin-bottom:25px;
+		
+	}
+	&__triangle {
+		margin-right:11px;
+		transition:0.4s;
+	}
+	&__triangle_active {
+		transform: rotate(-180deg);
+	}
+	&__trigger {
+		font-size:14px;
+		line-height:28px;
+		font-family:'Gagalin-Regular';
+		color:$white;
+		font-weight: normal;
+ 		font-style: normal;
+ 		display:block;
+ 		text-decoration:none;
+	}
+	&__block {
+		overflow:hidden;
+		transition:all 0.4s;
+		border-sizing:border-box;
+		height:0;
+		&-container {
+			padding-top:15px;
+		}
+	}
+	&__pic {
+		height:100px;
+		width:100px;
+		display:inline-block;
+		border-radius:50%;
+		margin-left:20px;
+		vertical-align:middle;
+	}
+	&__text {
+		display:inline-block;
+		width:225px;
+		margin-left:18px;
+		vertical-align:middle;
+	}
+	&__text-title {
+		display:block;
+		font-family:'Ubuntu-Bold';
+		font-size:14px;
+		line-height:24px;
+		font-weight:normal;
+		font-style:normal;
+		color:$white;
+		margin-bottom:10px;
+	}
+	&__content-text {
+		display:block;
+		font-family:'Ubuntu-Light';
+		font-size:14px;
+		line-height:24px;
+		font-weight:normal;
+		font-style:normal;
+		color:$white;
+	}
+
+}

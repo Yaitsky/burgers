@@ -1,0 +1,86 @@
+.reviews {
+	&__list {
+		padding:0;
+		margin:0;
+		list-style-type:0;
+		height:100%;
+		width: 100%;
+		font-size:0;
+	}
+	&__item {
+		display: inline-block;
+		width:25%;
+		height:50%;
+		position:relative;
+		background-position:center center;
+		background-size:cover;
+		background-repeat:no-repeat;
+	}
+	&__granger {
+		background-image:url('../img/content/reviews/reviews_1.jpg');
+	}
+	&__potter {
+		background-image:url('../img/content/reviews/reviews_2.jpg');
+	}
+	&__g-weasley {
+		background-image:url('../img/content/reviews/reviews_3.jpg');
+	}
+	&__diggory {
+		background-image:url('../img/content/reviews/reviews_4.jpg');
+	}
+	&__r-weasley {
+		background-image:url('../img/content/reviews/reviews_5.jpg');
+	}
+	&__lovegood {
+		background-image:url('../img/content/reviews/reviews_6.jpg');
+	}
+	&__dumbledore {
+		background-image:url('../img/content/reviews/reviews_7.jpg');
+	}
+	&__hagrid {
+		background-image:url('../img/content/reviews/reviews_8.jpg');
+	}
+
+	&__content {
+		top:0;
+		right: 0;
+		left:0;
+		bottom:0;
+		position:absolute;
+		background-color:rgba(20,20,20,0.7);
+		transform: scale(0.9);
+		padding:45px 20px;
+		opacity:0;
+		transition:0.3s;
+		&:hover {
+			transform: scale(1);
+			opacity:1;
+		}
+	}
+	&__title {
+		font-size:14px;
+		line-height:28px;
+		color:$white;
+		font-family:'Gagalin-Regular';
+		font-weight: normal;
+	 	font-style: normal;
+	}
+	&__text {
+		font-size:14px;
+		line-height:24px;
+		color:$white;
+		font-family:'Ubuntu-Light';
+		font-weight: normal;
+	 	font-style: normal;
+	 	display:block;
+	}
+	&__button {
+		background-color:$dark-grey;
+		margin-top:15px;
+		text-transform:uppercase;
+		&:hover {
+			background-color:#1f2122;
+		}
+	}
+
+}
